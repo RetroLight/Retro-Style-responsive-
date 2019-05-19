@@ -1,0 +1,114 @@
+@import "_colors.sass"
+@import "_media.sass"
+@font-face
+	font-family: "Bazar"
+	src: url("../fonts/Bazar.ttf")
+@font-face
+	font-family: "Seaside Resort"
+	src: url("../fonts/SeasideResortNF.ttf")
+@mixin section_head
+	font-family: "Bazar", sans-serif
+	font-size: 80px
+	text-shadow: 3px 3px 0 #fcfaf7
+	color: #393a3a
+	text-transform: uppercase
+@mixin section_head_text
+	margin-top: 10px
+	color: #38353e
+	font-family: "Oswald", sans-serif
+	font-size: 15px
+
+.header
+	background: url("../images/bg/first_section_BG.png")
+	.top-nav
+		font-family: "Bazar", sans-serif
+		font-size: 25px		
+		text-transform: uppercase	
+		margin-bottom: -30px
+		a 
+			text-decoration: none				
+		img 
+			width: 140px
+		li 
+			color: $topmenucolor
+			text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2)
+			list-style: none
+
+.top_navigation	
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.25)
+	background: url("../images/bg/first_section_BG.png")
+
+.header_name
+	margin-top: 200px
+	img 
+		width: 750px
+	.retro
+		text-transform: uppercase
+		font-family: "Seaside Resort", sans-serif
+		font-size: 110px
+		color: $topmenucolor
+		text-shadow: 1px 1px 2px rgba(232, 244, 244, 0.3)
+
+.second_block
+	background: url("../images/bg/second_section_BG.jpg")
+	&_header
+		margin-top: 80px
+		p 
+			@include section_head_text				
+	
+.head2
+	@include section_head
+
+.second_block_content	
+	margin-top: 10px
+	text-align: center
+	img 
+		width: 140px
+		text-align: center
+	h3 
+		margin-top: 35px
+		font-family: "Bazar", sans-serif
+		font-size: 25px
+		text-transform: uppercase
+	h6 
+		font-family: "Roboto Slab", sans-serif
+		font-weight: light
+		text-transform: uppercase
+		font-size: 14px
+	h6::after 
+		margin: 15px auto 15px auto
+		content: " "
+		width: 60px		
+		display: block
+		border: 2px solid #000
+	p 
+		font-family: "Roboto Slab", sans-serif
+		font-size: 15px
+		text-align: left
+		padding-bottom: 110px
+
+.portfolio_block
+	background: url("../images/bg/third_section_BG.jpg")
+
+.portfolio_block_header
+	padding-top: 80px
+	text-align: center
+	h2 
+		@include section_head
+	p 
+		@include section_head_text
+
+.filter
+	ul
+		li 			
+			background-color: #fbfaf6
+			padding: 7px 12px 7px 12px
+			box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2)			
+.little-circle
+	width: 6px
+	height: 6px
+	background-color: #959ca3
+	border-radius: 50px
+	margin-right: 5px
+	margin-bottom: 2px
+
