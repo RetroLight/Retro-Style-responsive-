@@ -12,11 +12,11 @@
 	text-shadow: 3px 3px 0 #fcfaf7
 	color: #393a3a
 	text-transform: uppercase
-@mixin section_head_text
-	margin-top: 10px
+	margin-bottom: 0
+@mixin section_head_text	
 	color: #38353e
 	font-family: "Oswald", sans-serif
-	font-size: 15px
+	font-size: 17px
 
 .header
 	background: url("../images/bg/first_section_BG.png")
@@ -54,10 +54,12 @@
 	&_header
 		margin-top: 80px
 		p 
-			@include section_head_text				
+			@include section_head_text	
+		img 
+			width: 150px			
 	
 .head2
-	@include section_head
+	@include section_head	
 
 .second_block_content	
 	margin-top: 10px
@@ -91,14 +93,17 @@
 	background: url("../images/bg/third_section_BG.jpg")
 
 .portfolio_block_header
-	padding-top: 80px
+	padding-top: 60px
 	text-align: center
 	h2 
 		@include section_head
 	p 
 		@include section_head_text
+	img 
+		width: 150px
 
 .filter
+	margin-top: 30px
 	ul
 		li 			
 			background-color: #fbfaf6
@@ -111,4 +116,176 @@
 	border-radius: 50px
 	margin-right: 5px
 	margin-bottom: 2px
+
+.portfolio_block_photos
+	margin-top: 10px
+	ul 
+		li 
+			padding: 0
+			margin-bottom: 24px
+			a				
+				display: block
+				width: 90%
+				border: 4px solid #fbfaf6
+				text-decoration: none
+				background-color: #fbfaf6
+				text-align: center				
+				&:hover
+					img.photo_icons
+						transform: translateY(-5px)
+						transition-duration: 300ms					
+				h3					
+					font-family: "Roboto Slab", sans-serif
+					color: #383a3c
+					font-size: 16px
+					font-weight: bolder
+					background-color: #fbfaf6
+					margin-bottom: 10px				
+				img 
+					width: 100%
+				img.photo_icons					
+					position: relative					
+					width: 45px
+					border-radius: 50%								
+					margin-top: -12px
+
+.browse_all	
+	a
+		text-decoration: none
+	div
+		font-family: "Oswald", sans-serif
+		font-weight: bolder
+		color: #38353e
+		margin-top: 5px	
+		padding-bottom: 30px	
+	&:before 		
+		position: absolute
+		display: inline		
+		content: ""
+		width: 45px
+		border-top: 3px solid #38353e
+
+.blog_section
+	background: url("../images/bg/fourth_section_BG.jpg")
+	&_header 
+		padding-top: 60px
+		text-align: center
+	h2 
+		@include section_head
+	p 
+		@include section_head_text
+		text-transform: uppercase
+	img 
+			width: 150px
+
+.blog_content
+	margin-top: 40px
+	li	
+		margin-bottom: 30px 
+		a			
+			margin-left: 30px
+			margin-right: 40px
+			padding: 0	
+			width: 100%	
+			img
+				width: 110%
+				border: 4px solid #fbfaf6
+				border-radius: 3px
+
+.text_in_blog	
+	h3 
+		font-family: "Roboto Slab", sans-serif
+		color: #383a3c
+		font-size: 28px	
+	h4 
+		font-family: "Oswald", sans-serif
+		font-size: 12px
+		font-weight: bold
+		color: #383a3c
+	h4:after 
+		margin-top: 10px
+		content: " "
+		display: block
+		border-top: 2px solid #383a3c
+		width: 40px
+		height: 2px
+	p 
+		margin-top: 20px
+		font-family: "Roboto Slab", sans-serif
+		font-size: 16px
+		color: #383a3c
+		text-transform: none
+
+.show_all	
+	a
+		text-decoration: none
+	div
+		font-family: "Oswald", sans-serif
+		font-weight: bolder
+		color: #38353e
+		margin-top: 5px	
+		padding-bottom: 30px	
+	&:before 		
+		position: absolute
+		display: inline		
+		content: ""
+		width: 45px
+		border-top: 3px solid #38353e
+
+.contact_block
+	background: url("../images/bg/last_section_BG.jpg")
+.contact_block_header
+	padding-top: 60px
+	text-align: center
+	h2 
+		@include section_head
+		color: #f6edd8
+		text-shadow: 3px 3px 0 #484a4d
+	p 
+		@include section_head_text
+		text-transform: uppercase
+		color: #f6edd8
+	img 
+		width: 150px
+
+.contact_form		
+	margin-top: 15px
+	input, textarea
+		border-radius: 3px
+		margin-top: 10px
+		width: 100%
+		padding: 2px 5px 2px 5px
+		font-family: "Roboto Slab", sans-serif
+		color: #a9a9a9
+	.button_submit
+		margin-bottom: 30px		
+		font-weight: bold
+		color: #383a3c
+		padding: 5px 5px 5px 5px
+
+.iam_social
+	h4
+		font-family: "Bazar", sans-serif
+		color: #f6edd8
+		font-size: 22px
+	h4:after 
+		margin-left: 30px
+		margin-top: 10px
+		display: block
+		content: " "
+		width: 35px		
+		border-top: 2px solid #f6edd8
+		margin-bottom: 20px
+
+.social_links_icons
+	a 
+		margin-right: 10px
+		margin-bottom: 70px
+		img
+			width: 80px
+
+
+
+
+
 
