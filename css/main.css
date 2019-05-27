@@ -19,10 +19,68 @@
       color: #f9ebd9;
       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
       list-style: none; }
+  .header .top-nav.active img {
+    display: none; }
 
 .top_navigation {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   background: url("../images/bg/first_section_BG.png"); }
+  .top_navigation .toggle_menu_button {
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    border-radius: 50%;
+    top: 5px;
+    left: 11px;
+    z-index: 11; }
+  .top_navigation .toggle_menu_button.active {
+    background-color: transparent; }
+  .top_navigation .toggle_menu_button.active:before, .top_navigation .toggle_menu_button.active:after {
+    background-color: #F4EACF; }
+  .top_navigation .toggle_menu_button:before, .top_navigation .toggle_menu_button:after {
+    left: 9px;
+    cursor: pointer;
+    content: " ";
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background-color: #2D2F31; }
+  .top_navigation .toggle_menu_button:after {
+    top: 10px;
+    transition: 0.5s; }
+  .top_navigation .toggle_menu_button:before {
+    top: 20px;
+    transition: 0.5s; }
+  .top_navigation .toggle_menu_button.active:after {
+    transform: rotate(45deg);
+    top: 16px; }
+  .top_navigation .toggle_menu_button.active:before {
+    transform: rotate(-45deg);
+    top: 16px; }
+  .top_navigation .toggle_menu_list.active ul {
+    background: url("../images/bg/Bez_imeni-1.png");
+    height: 110px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    z-index: 10; }
+    .top_navigation .toggle_menu_list.active ul a {
+      text-decoration: none; }
+      .top_navigation .toggle_menu_list.active ul a li {
+        margin-top: 10px;
+        margin-right: 10px;
+        text-decoration: none;
+        list-style: none;
+        color: #f9ebd9;
+        font-family: "Bazar", sans-serif;
+        text-transform: uppercase;
+        font-size: 3.5vw; }
+  .top_navigation .toggle_menu_list ul {
+    display: none;
+    transition: 0.5s; }
 
 .header_name {
   margin-top: 150px; }
@@ -88,8 +146,7 @@
       top: 21px;
       right: 4px;
       top: 2px;
-      -webkit-transform: rotate(180deg);
-              transform: rotate(180deg); }
+      transform: rotate(180deg); }
 
 .hello_john {
   text-align: center;
@@ -221,8 +278,7 @@
     background-color: #fbfaf6;
     text-align: center; }
     .portfolio_block_photos ul li a:hover img.photo_icons {
-      -webkit-transform: translateY(-5px);
-              transform: translateY(-5px);
+      transform: translateY(-5px);
       transition-duration: 300ms; }
     .portfolio_block_photos ul li a h3 {
       font-family: "Roboto Slab", sans-serif;
@@ -401,6 +457,9 @@
 
   .contact_block_header .contact_head {
     font-size: 50px; } }
+@media(min-width:768px) {
+  .toggle_menu {
+    display: none; } }
 @media(max-width:768px) {
   .top_navigation a.nav_element {
     display: none; } }
@@ -421,3 +480,5 @@
 @media(max-width:1200px) {
   .header_name .retro {
     font-size: 90px; } }
+
+/*# sourceMappingURL=main.css.map */
